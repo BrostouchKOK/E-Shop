@@ -20,7 +20,7 @@ const Navbar = () => {
               className="text-primary font-semibold uppercase text-2xl
                     sm:text-3xl tracking-widest"
             >
-              Eshop
+              KBT-Eshop
             </a>
             {/* menu items */}
             <div className="hidden lg:block">

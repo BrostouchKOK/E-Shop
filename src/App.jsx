@@ -7,6 +7,7 @@ import Services from './components/services/Services'
 import Banner from './components/banner/Banner'
 import { bannerData, bannerData2 } from './constant/bannerData'
 import Products from './components/products/Products'
+import Blog from './components/blog/Blog'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Banner data={bannerData}/>
       <Products/>
       <Banner data={bannerData2}/>
+      <Blog/>
     </div>
   )
 }
