@@ -6,6 +6,7 @@ import Category2 from './components/category/Category2'
 import Services from './components/services/Services'
 import Banner from './components/banner/Banner'
 import { bannerData } from './constant/bannerData'
+import Products from './components/products/Products'
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Category2/>
       <Services/>
       <Banner data={bannerData}/>
+      <Products/>
     </div>
   )
 }
