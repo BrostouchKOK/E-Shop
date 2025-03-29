@@ -5,7 +5,7 @@ import { FaCaretDown, FaShoppingCart } from "react-icons/fa";
 import DarkMode from "./DarkMode";
 import { dropDownLinks } from "../../constant/dropDownLinks";
 
-const Navbar = () => {
+const Navbar = ({ handleOrderPopup }) => {
   return (
     <div
       className="bg-white dark:bg-gray-900 dark:text-white
@@ -83,7 +83,7 @@ const Navbar = () => {
             </div>
             {/* order button section */}
             <button className="relative p-3">
-              <FaShoppingCart className="text-xl text-gray-600 dark:text-gray-400" />
+              <FaShoppingCart onClick={handleOrderPopup} className="text-xl text-gray-600 dark:text-gray-400" />
               <div
                 className="w-4 h-4 bg-red-500 text-white rounded-full
                 absolute top-0 right-0 flex justify-center items-center text-xs"

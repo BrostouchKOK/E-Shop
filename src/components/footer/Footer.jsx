@@ -1,6 +1,12 @@
 import React from "react";
 import { footerLinks } from "../../constant/footerData";
-import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMobileAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaLocationArrow,
+  FaMobileAlt,
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -68,29 +74,23 @@ const Footer = () => {
                 Address Links
               </h1>
               <div className="flex items-center gap-3">
-                <FaLocationArrow/>
+                <FaLocationArrow />
                 <p className="text-gray-600">Phnom Penh</p>
               </div>
               <div className="flex items-center gap-3 mt-6">
-                <FaMobileAlt/>
+                <FaMobileAlt />
                 <p className="text-gray-600">+855969634904</p>
               </div>
               {/* Social link */}
               <div className="  mt-4 flex items-center gap-3">
                 <a href="#">
-                  <FaInstagram
-                    className="text-3xl hover:text-primary duration-300"
-                  />
+                  <FaInstagram className="text-3xl hover:text-primary duration-300" />
                 </a>
                 <a href="#">
-                  <FaFacebook
-                    className="text-3xl hover:text-blue-600 duration-300"
-                  />
+                  <FaFacebook className="text-3xl hover:text-blue-600 duration-300" />
                 </a>
                 <a href="#">
-                  <FaLinkedin
-                    className="text-3xl hover:text-blue-400 duration-300"
-                  />
+                  <FaLinkedin className="text-3xl hover:text-blue-400 duration-300" />
                 </a>
               </div>
             </div>

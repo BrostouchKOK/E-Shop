@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { use, useState } from 'react'
 import Navbar from './components/navbar/Navbar'
 import Hero from './components/hero/Hero'
 import Category from './components/category/Category'
@@ -10,14 +10,20 @@ import Products from './components/products/Products'
 import Blog from './components/blog/Blog'
 import Partners from './components/partner/Partners'
 import Footer from './components/footer/Footer'
+import Popup from './components/popup/Popup'
 
 const App = () => {
+  const [orderPopup,setOrderPopup] = useState(false);
+  const handleOrderPopup = ()=>{
+    setOrderPopup(!orderPopup);
+  }
+
   return (
     <div className='bg-white dark:bg-gray-900 dark:text-white
       duration-200 overflow-hidden'
     >
-      <Navbar/>
-      <Hero/>
+      <Navbar handleOrderPopup={handleOrderPopup}/>
+      <Hero handleOrderPopup={handleOrderPopup}/>
       <Category/>
       <Category2/>
       <Services/>
@@ -27,6 +33,7 @@ const App = () => {
       <Blog/>
       <Partners/>
       <Footer/>
+      <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup}/>
     </div>
   )
 }
