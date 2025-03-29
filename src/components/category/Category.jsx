@@ -55,9 +55,9 @@ const Category = () => {
               className="w-[320px] absolute bottom-0 -right-4 lg:top-[40px]"
             />
           </div>
-          {/* three col */}
+          {/* third col */}
           <div
-            className="col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90
+            className="sm:col-span-2 py-10 pl-5 bg-gradient-to-br from-primary to-primary/90
             text-white rounded-3xl relative h-[300px] flex items-center"
           >
             <div>

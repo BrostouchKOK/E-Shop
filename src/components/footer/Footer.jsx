@@ -27,7 +27,7 @@ const Footer = () => {
               quae! Ab!
             </p>
             <p className="mt-3 text-gray-600 lg:pr-24">
-              Made wiht 💗 by Brostouch'K
+              Made with 💗 by Brostouch'K
             </p>
           </div>
           {/* Footer links */}

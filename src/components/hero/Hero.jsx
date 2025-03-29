@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { HeroData } from "../../constant/heroData";
 import Button from "../shared/Button";
 
-const Hero = ({handleOrderPopup}) => {
+const Hero = ({ handleOrderPopup }) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -31,34 +31,50 @@ const Hero = ({handleOrderPopup}) => {
                     gap-4 sm:pl-3 pt-12 sm:pt-0 text-center sm:text-left
                     order-2 sm:order-1 relative z-10"
                   >
-                    <h1 className="text-2xl sm:text-6xl lg:text-2xl font-bold">
+                    <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
+                      className="text-2xl sm:text-6xl lg:text-2xl font-bold"
+                    >
                       {data.subtitle}
                     </h1>
                     <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
                       className="text-5xl sm:text-6xl lg:text-7xl
                         font-bold"
                     >
                       {data.title}
                     </h1>
                     <h1
+                      data-aos="zoom-out"
+                      data-aos-duration="500"
+                      data-aos-once="true"
                       className="text-5xl uppercase text-white
                         dark:text-white/5 sm:text-[80px] md:text-[100px]
                         xl:text-[150px] font-bold"
                     >
                       {data.title2}
                     </h1>
-                    <div>
+                    <div
+                      data-aos="fade-up"
+                      data-aos-duration="500"
+                      data-aos-delay="300"
+                      data-aos-offet="0"
+                    >
                       <Button
                         text="Shop By Category"
                         bgColor="bg-primary"
                         textColor={"text-white"}
-                        handler = {handleOrderPopup}
+                        handler={handleOrderPopup}
                       />
                     </div>
                   </div>
                   {/* image section */}
                   <div className="order-1 sm:order-2">
-                    <div>
+                    <div  data-aos="zoom-in" data-aos-once="true">
                       <img
                         src={data.img}
                         alt=""

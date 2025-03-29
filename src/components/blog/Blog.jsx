@@ -15,7 +15,12 @@ const Blog = () => {
         >
           {/* blog card */}
           {blogData.map((data, index) => (
-            <div key={index} className="bg-white dark:bg-gray-900">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={data.aosDelay}
+              key={index}
+              className="bg-white dark:bg-gray-900"
+            >
               {/* imgage section */}
               <div className="overflow-hidden rounded-2xl mb-2">
                 <img

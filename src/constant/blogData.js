@@ -8,6 +8,7 @@ export const blogData = [
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Dilshad",
     image: Img1,
+    aosDelay : "0",
   },
   {
     title: "How to choose perfect gadget",
@@ -15,6 +16,7 @@ export const blogData = [
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Satya",
     image: Img2,
+    aosDelay : "200",
   },
   {
     title: "How to choose perfect VR headset",
@@ -22,5 +24,6 @@ export const blogData = [
       "minima facere deserunt vero illo beatae deleniti eius dolores consequuntur, eligendi corporis maiores molestiae laudantium. Porro?",
     published: "Jan 20, 2024 by Brostouch",
     image: Img3,
+    aosDelay : "300",
   },
 ];
