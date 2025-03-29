@@ -9,6 +9,7 @@ import { bannerData, bannerData2 } from './constant/bannerData'
 import Products from './components/products/Products'
 import Blog from './components/blog/Blog'
 import Partners from './components/partner/Partners'
+import Footer from './components/footer/Footer'
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
       <Banner data={bannerData2}/>
       <Blog/>
       <Partners/>
+      <Footer/>
     </div>
   )
 }
